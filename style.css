@@ -26,7 +26,7 @@ body{
 }
 
 .navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,.hero-services,
-.section-container, .hero-gallery{
+.section-container, .hero-gallery, .hero-vendor{
     display: flex;
     align-items: center;
     
@@ -37,7 +37,7 @@ body{
     display: block;
 }
 /* navbar */
-.navbar, .hero-home,.hero-about,.hero-services, .hero-gallery, .footer{
+.navbar, .hero-home,.hero-about,.hero-services, .hero-gallery, .hero-vendor, .footer{
     padding: 20px;
 }
 .navbar{
@@ -90,7 +90,7 @@ body{
 }
 
 /* section common body */
-.hero-home,.hero-about,.hero-services,.hero-gallery{
+.hero-home,.hero-about,.hero-services,.hero-gallery, .hero-vendor{
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -222,6 +222,9 @@ body{
 
 
 /* gallery */
+.hero-gallery{
+    height: auto;
+}
 .gallery-container{
     /* background-color: aqua; */
     width: 100%;

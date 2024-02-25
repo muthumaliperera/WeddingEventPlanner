@@ -25,7 +25,7 @@ body{
     align-items: center;
 }
 
-.navbar,.nav-content,.section-content,.hero-home,.btn-home,
+.navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,
 .section-container{
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     display: block;
 }
 /* navbar */
-.navbar, .hero-home, .footer{
+.navbar, .hero-home,.hero-about, .footer{
     padding: 20px;
 }
 .navbar{
@@ -142,5 +142,44 @@ body{
 #contact-us:active{
     background: rgb(27, 27, 27);
     transition-duration: 0.1s;
+}
 
+
+/* about us */
+.hero-about{
+    /* background-color: aqua; */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+#title-main{
+    color: chocolate;
+    font-size: 20px;
+    
+}
+#about-title{
+    color: rgb(31, 31, 31);
+    text-align: center;
+}
+#about-text{
+    color: rgb(111, 111, 111);
+    font-weight: 550;
+    font-size: 10px;
+    font-family: 'Poppins';
+}
+.about-viola, .expertise, .testimonials, .commitment{
+    background-color: rgb(255, 221, 195);
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.story, .client-approach{
+    background-color: rgb(254, 239, 228);
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }

@@ -25,8 +25,8 @@ body{
     align-items: center;
 }
 
-.navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,
-.section-container{
+.navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,.hero-services,
+.section-container, .hero-gallery{
     display: flex;
     align-items: center;
     
@@ -37,7 +37,7 @@ body{
     display: block;
 }
 /* navbar */
-.navbar, .hero-home,.hero-about, .footer{
+.navbar, .hero-home,.hero-about,.hero-services, .hero-gallery, .footer{
     padding: 20px;
 }
 .navbar{
@@ -82,12 +82,17 @@ body{
     flex-direction: column;
     /* background-color: chartreuse; */
 }
+
+
 .hero-home{
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
     background: linear-gradient(rgba(255, 232, 184, 0.348), rgba(197, 141, 99, 0.937)), /* Black gradient with 50% opacity */
     url("./assets/wed1.jpg");
+}
+
+/* section common body */
+.hero-home,.hero-about,.hero-services,.hero-gallery{
+    height: 100vh;
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,10 +152,9 @@ body{
 
 /* about us */
 .hero-about{
-    /* background-color: aqua; */
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.937)), url("./assets/wed3.jpg"); */
+    background-color: rgb(248, 232, 213);
+   
 }
 #title-main{
     color: chocolate;
@@ -182,4 +186,55 @@ body{
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+
+/* services */
+.hero-services{
+
+}
+#service-intro{
+    margin: 20px 0px;
+}
+#service-title{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    width:350px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.2s;
+
+}
+#service-title:hover{
+    background-color: rgb(213, 177, 129);
+}
+#service-title:active{
+    background-color: rgb(165, 137, 101);
+}
+#service-title a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+/* gallery */
+.gallery-container{
+    /* background-color: aqua; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+
+}
+#gal{
+    width: 180px;
+    height: auto;
 }

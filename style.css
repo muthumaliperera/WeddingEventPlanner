@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+}
+/* font-family: "Poppins", sans-serif; */
+body{
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+   
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home,
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar,.nav-content,.section-content,.hero-home,.btn-home,
+.section-container{
+    display: flex;
+    align-items: center;
+    
+}
+.section-container{
+    width:100%; 
+    height: 100%;
+    display: block;
+}
+/* navbar */
+.navbar, .hero-home, .footer{
+    padding: 20px;
+}
+.navbar{
+    width: 100%;
+    /* height: 100px;*/
+    background-color: #ffffff; 
+    justify-content: center;
+    height: 10%;
+    position: fixed;
+}
+.nav-content{
+    width:100%; 
+    height: 100%;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.nav-list {
+    display: none;
+}
+.logo h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: chocolate;
+}
+.fa-solid,
+.nav-list a{
+    text-decoration: none;
+
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-icons .fa-solid{
+    font-size: 13px;
+    color: chocolate;
+}
+/* hero home */
+.section-content{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+}
+.hero-home{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 232, 184, 0.348), rgba(197, 141, 99, 0.937)), /* Black gradient with 50% opacity */
+    url("./assets/wed1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.hero-home h1{
+    width: 60%;
+ font-size: 40px;
+ font-weight: 500;
+ text-align: center;
+ color: rgb(255, 255, 255);
+}
+.btn-home{
+    gap: 15px;
+}
+
+#start-plan, #contact-us{
+    margin-top: 20px;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family:  "Playfair Display", serif;
+    transition-duration: 0.3s;
+}
+#start-plan{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+#start-plan:hover{
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: chocolate;
+    color: rgb(255, 255, 255);
+}
+#start-plan:active{
+    background: rgb(124, 62, 18);
+    transition-duration: 0.1s;
+
+}
+#contact-us{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgb(45, 45, 45);
+}
+#contact-us:hover{
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgb(98, 98, 98);
+    color: rgb(255, 255, 255);
+}
+#contact-us:active{
+    background: rgb(27, 27, 27);
+    transition-duration: 0.1s;
+
+}

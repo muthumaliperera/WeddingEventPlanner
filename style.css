@@ -25,8 +25,8 @@ body{
     align-items: center;
 }
 
-.navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,.hero-services,
-.section-container, .hero-gallery, .hero-vendor{
+.logo, .navbar,.nav-content,.section-content,.hero-home,.btn-home,.hero-about,.hero-services,
+.section-container, .hero-gallery, .hero-vendor, .footer-content ul, .footer-content, .social{
     display: flex;
     align-items: center;
     
@@ -57,16 +57,27 @@ body{
 .nav-list {
     display: none;
 }
+.logo{
+    gap: 10px;
+}
+#logo-icon{
+    text-align: center;
+    background-color:chocolate;
+    width: 30px;
+    border-radius: 5px;
+    color:#ffffff
+}
 .logo h1{
     font-size: 30px;
     font-weight: 500;
     color: chocolate;
 }
-.fa-solid,
+.fa-solid, .footer a,
 .nav-list a{
     text-decoration: none;
 
 }
+.footer li,
 .nav-list li{
     list-style: none;
 }
@@ -241,3 +252,60 @@ body{
     width: 180px;
     height: auto;
 }
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: chocolate;
+}
+.footer .logo{    
+    height: 10vh;
+}
+.footer .footer-content{    
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+.footer-content ul{
+    flex-direction: column;
+    width: 50%;
+}
+.footer .footer-copyrigh{    
+    height: 10vh;
+}
+.footer #logo-icon{
+    text-align: center;
+    background-color: #ffffff;
+    width: 30px;
+    border-radius: 5px;
+    color: chocolate;
+}
+.footer .logo h1{
+    color: #ffffff;
+}
+.footer a{
+    color: #ffffff;
+}
+.footer-span{
+    width: 1.5px;
+    height: 150px;
+    background-color: #fff;
+}
+.social{
+    /* flex-direction: column; */
+    height: 100%;
+    gap: 8px;
+    width: 50%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-self: center;
+    padding-left: 20px;
+}
+.social a{
+    font-size: 20px;
+    text-align: center;
+}
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;}

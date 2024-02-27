@@ -1,10 +1,98 @@
 @media screen and (min-width:768px){
     body{
-        background-color: #c84242;
+        background-color: #fff562;
+    }
+    #hero-home{
+        padding-top: 14vh;
+        height: 50vh;
+    }
+    #hero-home h1{
+        width: 70%;
+     font-size: 29px;
+    }
+    #title-img{
+        width: 130px;
+        height: 50px;
+    }
+    #title-main{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    #about-title{
+        font-size: 14px;
+    }
+    #about-text{
+        font-size: 12px;
+    }
+    .image-icons{
+        width: 60%;
+    }
+    #gal{
+        width: 120px;
+    }
+    #rose1{
+        top: 68vh;
+    }
+    #rose2{
+        top: 129vh;
+    }
+    #rose3{
+        top:153vh;
+    }
+    #rose4{
+        width: 220px;
+        top: 220vh;
+    }
+    #rose5{
+        top:246vh;
+    }
+    #rose6{
+        width: 220px;
+        top: 320vh;
     }
 }
 @media screen and (min-width:1025px){
     body{
         background-color: #fff;
+    }
+    #hero-home{
+        padding-top: 20vh;
+        height: 60vh;
+    }
+    #hero-home h1{
+     font-size: 33px;
+    }
+   
+    .image-icons{
+        width: 50%;
+    }
+    #gal{
+        width: 140px;
+    }
+    #rose1{
+        width: 150px;
+        top: 70vh;
+    }
+    #rose2{
+        top: 130vh;
+    }
+    #rose3{
+        width: 150px;
+        top:158vh;
+    }
+    #rose4{
+        width: 250px;
+        top: 220vh;
+    }
+    #rose5{
+        width: 150px;
+        top:250vh;
+    }
+    #rose6{
+        width: 250px;
+        top: 330vh;
+    }
+    #service-intro{
+        font-size: 15px;
     }
 }

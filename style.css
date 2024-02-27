@@ -8,7 +8,7 @@ body{
     font-family: "Playfair Display", serif;
     min-height: 100vh;
     width: 100%;
-    /* overflow: hidden; */
+    overflow-x: hidden;
    
     display: block;
     display: flex;
@@ -26,7 +26,7 @@ body{
 }
 
 .logo, .navbar,.nav-content,.section-content,#hero-home,.btn-home,#hero-about,#hero-services,
-.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title{
+.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title, .image-icons,.service-list, .vendor-list{
     display: flex;
     align-items: center;
     
@@ -178,7 +178,7 @@ body{
     width: 100px;
 }
 #title-main{
-    color: chocolate;
+    color: hwb(25 12% 18%);
     font-size: 20px;
     padding: 0;
     line-height: 18px;
@@ -276,30 +276,63 @@ body{
     padding: 10px;
     border-radius: 5px;
     width:350px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin-top: 10px;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
     transition-duration: 0.2s;
+    
 
 }
-#vendor-title:hover,
-#service-title:hover{
-    background-color: rgb(213, 177, 129);
-}
-#vendor-title:active,
-#service-title:active{
-    background-color: rgb(165, 137, 101);
-}
+
 #vendor-title a,
 #service-title a{
-    color: rgb(0, 0, 0);
+    color: chocolate;
     text-decoration: none;
+    transition-duration: 0.2s;
 }
+#vendor-title a:hover,
+#service-title a:hover{
+   color: rgb(213, 177, 129);
+   padding: 10px;
+   box-shadow: 5px 5px 5px rgb(255, 214, 214);
+   border-radius: 25px;
+   
+}
+#vendor-title a :active,
+#service-title a:active{
+    color: rgb(165, 137, 101);
+}
+.vendor-list,
+.service-list{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    gap: 0;
+}
+#service-icon{
+    width: 60px;
+}
+
+.image-icons{
+    /* gap: 10px; */
+    width: 80%;
+    height: 80px;
+    background-color: rgba(255, 235, 205, 0.193);
+    padding: 20px;
+}
+#image-split{
+ width: 1px;
+ height: 80px;
+ background-color: antiquewhite;
+ margin-left: 10px;
+}
+
 
 /* vendor */
 #hero-vendor{
-    height: 90vh;
+    height: 100vh;
 }
 
 
@@ -308,7 +341,7 @@ body{
 
 /* gallery */
 #hero-gallery{
-    height: auto;
+    height: 100vh;
     background-color: #fff2f2;
 }
 .gallery-container{
@@ -321,10 +354,11 @@ body{
     justify-content: center;
     gap: 5px;
     margin-top: 20px;
+    overflow: hidden;
 
 }
 #gal{
-    width: 180px;
+    width: 100px;
     height: auto;
 }
 .footer{

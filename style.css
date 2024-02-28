@@ -442,18 +442,27 @@ body{
 
 /* FAQ */
 #hero-FAQ{
+    width: 100%;
     flex-direction: column;
+    height: 100vh;
 }
 .faq-list{
 /* background-color: aqua; */
 margin-top: 20px;
+width: 100%;
 
+}
+.faq-container{
+    width: 100%;
+    flex-direction: column;
 }
 .list-faq{
     /* background-color: aquamarine; */
     flex-direction: column;
     text-align: justify;
     margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
     
 }
 .faq{
@@ -480,10 +489,24 @@ margin-top: 20px;
     font-size: 15px;
 
 }
+
 .ans p{
     color: rgb(93, 93, 93);
     font-size: 12px;
 }
+.ans{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+}
+.ans.active{
+    /* background-color: aqua; */
+    max-height: 100px;
+}
+@keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+  }
 .down-icon .fa-chevron-down{
     color: chocolate;
 }

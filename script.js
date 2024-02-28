@@ -79,16 +79,14 @@ scrollLinks.forEach(function(scrollLink) {
 });
 
 
-const chevronIcons = document.querySelectorAll('.fa-chevron-down');
+function toggleFunction(questionId){
+    var toggleAns = document.getElementById("ans" + questionId);
 
-    // Add click event listener to each chevron icon
-    chevronIcons.forEach(icon => {
-        icon.addEventListener('click', function() {
-            const ans = this.parentElement.parentElement.nextElementSibling;
-            if (ans.style.display === 'none') {
-                ans.style.display = 'block';
-            } else {
-                ans.style.display = 'none';
-            }
-        });
-    });
+    if (toggleAns.classList.contains("active")) {
+        toggleAns.classList.remove("active");
+    } else {
+        toggleAns.classList.add("active");
+    }
+    
+
+}

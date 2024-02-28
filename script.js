@@ -1,15 +1,36 @@
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
+var menuIcon = document.getElementById('menuIcon');
+var navList = document.querySelector('.nav-list');
 
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+    var currentScrollPos = window.scrollY;
     var navbar = document.querySelector('.navbar');
+ 
 
     if (prevScrollpos > currentScrollPos) {
         navbar.style.top = "0";
+        if (navList.style.display !== 'none') {
+            navList.style.opacity = '0';
+            setTimeout(function() {
+                navList.style.display = 'none';
+            }, 300);
+        }
+        if (menuIcon.classList.contains('fa-times')) {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+            
+        }
+        
+        
     } else {
-        navbar.style.top = "-10vh"; // Hiding navbar by shifting it off-screen
-        var navList = document.querySelector('.nav-list');
-        navList.style.display = 'none'; // Hiding nav-list when scrolling down
+        navbar.style.top = "-10vh";
+        if (navList.style.display !== 'none') {
+            navList.style.opacity = '0';
+            setTimeout(function() {
+                navList.style.display = 'none';
+            }, 300);
+        }
+
     }
     prevScrollpos = currentScrollPos;
 };
@@ -19,6 +40,9 @@ document.getElementById('menuIcon').addEventListener('click', function() {
     
     if (navList.style.display === 'none'|| navList.style.display === '')  {
         navList.style.display = 'block';
+
+        this.classList.add('fa-times');
+        this.classList.remove('fa-bars');
 
         setTimeout(function() {
             navList.style.opacity = '1';
@@ -30,6 +54,8 @@ document.getElementById('menuIcon').addEventListener('click', function() {
         setTimeout(function() {
         navList.style.display = 'none';
         },300);
+        this.classList.remove('fa-times');
+        this.classList.add('fa-bars');
     }
 });
 
@@ -52,3 +78,17 @@ scrollLinks.forEach(function(scrollLink) {
     });
 });
 
+
+const chevronIcons = document.querySelectorAll('.fa-chevron-down');
+
+    // Add click event listener to each chevron icon
+    chevronIcons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const ans = this.parentElement.parentElement.nextElementSibling;
+            if (ans.style.display === 'none') {
+                ans.style.display = 'block';
+            } else {
+                ans.style.display = 'none';
+            }
+        });
+    });

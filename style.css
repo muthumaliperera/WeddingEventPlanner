@@ -26,11 +26,17 @@ body{
 }
 
 .logo, .navbar,.nav-content,.section-content,#hero-home,.btn-home,#hero-about,#hero-services,
-.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title, .image-icons,.service-list, .vendor-list{
+.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title, .image-icons,.service-list, .vendor-list,.list-container,.about-container{
     display: flex;
     align-items: center;
     
 }
+#hero-home,#hero-about,#hero-services,
+ #hero-gallery, #hero-vendor{
+    transition: ease-in 0.3s;
+    
+}
+
 .section-container{
     width:100%; 
     height: 100%;
@@ -49,6 +55,7 @@ body{
     position: sticky;
     z-index: 1;
     top: 0;
+    transition: top 0.3s;
 }
 .nav-content{
     width:100%; 
@@ -58,6 +65,20 @@ body{
 }
 .nav-list {
     display: none;
+    position: absolute;
+    top: 10vh;
+    background-color: rgba(210, 105, 30, 0.64);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    height: 25vh;
+    width: 100%;
+    transition: ease-in;
+    transition: ease-in-out 0.2s;
+    text-align: center;
+}
+.nav-list ul li a{
+    color: #fff;
+    line-height: 22px;
 }
 .logo{
     gap: 10px;
@@ -184,6 +205,10 @@ body{
     text-align: center;
     
 }
+.about-container{
+        flex-direction: column;
+        width: 100%;
+    }
 #about-title{
     color: rgb(31, 31, 31);
     text-align: center;
@@ -194,8 +219,8 @@ body{
     font-size: 10px;
     font-family: 'Poppins';
 }
-.about-viola, .expertise, .testimonials, .commitment,.story, .client-approach{
-    background-color: rgb(255, 244, 235);
+.about-viola, .expertise, .commitment,.story{
+    background-color: rgb(255, 238, 225);
     padding: 10px;
     text-align: justify;
     width: 100%;
@@ -249,16 +274,21 @@ body{
     /* background-color: #fff; */
     height: 90vh;
 }
+.list-container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
 #vendor-title,
 #service-intro{
     margin: 20px 0px;
 }
 #vendor-title,
 #service-title{
-    font-size: 16px;
+    font-size: 13px;
     padding: 10px;
     border-radius: 5px;
-    width:350px;
+    width:auto;
     /* background-color: antiquewhite; */
     margin-top: 10px;
     cursor: pointer;
@@ -289,10 +319,9 @@ body{
 .vendor-list,
 .service-list{
     width: 100%;
-    flex-direction: column;
     justify-content: center;
     /* background-color: aqua; */
-    gap: 0;
+
 }
 #service-icon{
     width: 60px;
@@ -300,10 +329,11 @@ body{
 
 .image-icons{
     /* gap: 10px; */
-    width: 70%;
+    width: 350px;
     height: 80px;
-    background-color: rgba(255, 235, 205, 0.193);
+    background-color: rgba(255, 235, 205, 0.279);
     padding: 20px;
+    flex-direction: row;
 }
 #image-split{
  width: 1px;

@@ -26,13 +26,13 @@ body{
 }
 
 .logo, .navbar,.nav-content,.section-content,#hero-home,.btn-home,#hero-about,#hero-services,
-.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title, .image-icons,.service-list, .vendor-list,.list-container,.about-container{
+.section-container, #hero-gallery, #hero-vendor, .footer-content ul, .footer-content, .social, .title, .image-icons,.service-list, .vendor-list,.list-container,.about-container, #hero-FAQ,.faq-list,  .faq, .q-no{
     display: flex;
     align-items: center;
     
 }
 #hero-home,#hero-about,#hero-services,
- #hero-gallery, #hero-vendor{
+ #hero-gallery, #hero-vendo, #hero-FAQ{
     transition: ease-in 0.3s;
     
 }
@@ -43,7 +43,7 @@ body{
     display: block;
 }
 /* navbar */
-.navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor, .footer{
+.navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor, .footer, #hero-FAQ{
     padding: 20px;
 }
 .navbar{
@@ -63,6 +63,12 @@ body{
     justify-content: space-between;
     /* background-color: aqua; */
 }
+.active-nav-list{
+    display: none;
+}
+.active-nav-list ul li{
+    display: inline;
+}
 .nav-list {
     display: none;
     position: absolute;
@@ -72,7 +78,6 @@ body{
     padding: 15px;
     height: 25vh;
     width: 100%;
-    transition: ease-in;
     transition: ease-in-out 0.2s;
     text-align: center;
 }
@@ -316,6 +321,7 @@ body{
 #service-title a:active{
     color: rgb(165, 137, 101);
 }
+.faq-list,
 .vendor-list,
 .service-list{
     width: 100%;
@@ -431,3 +437,53 @@ body{
     color: #fff;
     text-align: center;
     margin-top: 20px;}
+
+
+
+/* FAQ */
+#hero-FAQ{
+    flex-direction: column;
+}
+.faq-list{
+/* background-color: aqua; */
+margin-top: 20px;
+
+}
+.list-faq{
+    /* background-color: aquamarine; */
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 10px;
+    
+}
+.faq{
+    /* background-color: burlywood; */
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.num {
+    font-size: 15px;
+    /* background-color: rgba(210, 105, 30, 0.162); */
+    border: 2px solid rgba(210, 105, 30, 0.704);
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: rgba(210, 105, 30, 0.934);
+}
+.q-no{
+    gap: 10px;
+}
+.que {
+    color: chocolate;
+    font-size: 15px;
+
+}
+.ans p{
+    color: rgb(93, 93, 93);
+    font-size: 12px;
+}
+.down-icon .fa-chevron-down{
+    color: chocolate;
+}

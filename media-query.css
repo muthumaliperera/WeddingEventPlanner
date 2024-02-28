@@ -2,6 +2,21 @@
     body{
         /* background-color: #fff562; */
     }
+    .nav-icons{
+        display: none;
+    }
+    .active-nav-list{
+        display: block;
+    }
+    #homeIcon{
+        color: chocolate;
+    }
+    .active-nav-list ul li a {
+        text-decoration: none;
+        color: rgb(202, 96, 20);
+        padding: 0 5px;
+        font-size: 15px;
+    }
     .navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor{
         padding: 20px 10%;
     }

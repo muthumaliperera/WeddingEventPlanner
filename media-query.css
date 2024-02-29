@@ -86,6 +86,9 @@
         width: 220px;
         top: 320vh;
     }
+    .faq-container{
+        width: 80%;
+    }
 }
 @media screen and (min-width:1025px){
     body{
@@ -156,4 +159,9 @@
     #service-intro{
         font-size: 15px;
     }
+
+    .faq-container{
+        width: 60%;
+    }
+
 }

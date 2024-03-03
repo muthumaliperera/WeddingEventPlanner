@@ -14,7 +14,7 @@
     .active-nav-list ul li a {
         text-decoration: none;
         color: rgb(202, 96, 20);
-        padding: 0 5px;
+        padding: 0 8px;
         font-size: 15px;
     }
     .navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor{
@@ -68,23 +68,37 @@
     }
     #rose1{
         top: 68vh;
+        left: 7%;
     }
     #rose2{
         top: 129vh;
+        right: 7%;
     }
     #rose3{
-        top:153vh;
+        top:163vh;
+        left: 7%;
     }
     #rose4{
         width: 220px;
-        top: 220vh;
+        top: 230vh;
+        right: 7%;
     }
     #rose5{
-        top:246vh;
+        top:265vh;
+        left: 7%;
     }
     #rose6{
         width: 220px;
-        top: 320vh;
+        top: 330vh;
+        right: 7%;
+    }
+    #rose7{
+        top:462vh;
+        left: 7%;
+    }
+    #rose8{
+        top: 520vh;
+        right: 7%;
     }
     .faq-container{
         width: 80%;
@@ -136,25 +150,42 @@
     #rose1{
         width: 150px;
         top: 70vh;
+        left: 7%;
     }
     #rose2{
-        top: 130vh;
+        top: 135vh;
+        right: 7%;
     }
     #rose3{
         width: 150px;
-        top:158vh;
+        top:168vh;
+        left: 7%;
     }
     #rose4{
         width: 250px;
-        top: 220vh;
+        top: 230vh;
+        right: 7%;
     }
     #rose5{
         width: 150px;
-        top:250vh;
+        top:270vh;
+        left: 7%;
     }
     #rose6{
         width: 250px;
-        top: 330vh;
+        top: 340vh;
+        right: 7%;
+
+    }
+    #rose7{
+        width: 150px;
+        top:470vh;
+        left: 7%;
+    }
+    #rose8{
+        width: 250px;
+        top: 530vh;
+        right: 7%;
     }
     #service-intro{
         font-size: 15px;

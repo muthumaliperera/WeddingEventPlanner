@@ -90,3 +90,25 @@ function toggleFunction(questionId){
     
 
 }
+
+const images = document.querySelectorAll('.gal');
+    const overlay = document.getElementById('overlay');
+    const overlayImg = document.getElementById('overlay-img');
+    const closeBtn = document.querySelector('.close-btn');
+    const body = document.querySelector('body');
+    const navbar = document.querySelector('.navbar');
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            overlay.style.display = 'flex';
+            overlayImg.src = image.src;
+            body.classList.add('no-scroll');
+            navbar.style.display = 'none';
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        body.classList.remove('no-scroll');
+        navbar.style.display = 'block';
+    });

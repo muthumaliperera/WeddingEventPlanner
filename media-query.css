@@ -20,7 +20,7 @@
     .navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor{
         padding: 20px 10%;
     }
-    .footer{
+    #footer{
         padding: 20px 20%;
     }
     #hero-home{
@@ -63,7 +63,7 @@
     .image-icons{
         width: 60%;
     }
-    #gal{
+    .gal{
         width: 120px;
     }
     #rose1{
@@ -97,7 +97,7 @@
     .navbar, #hero-home,#hero-about,#hero-services, #hero-gallery, #hero-vendor{
         padding: 20px 10%;
     }
-    .footer{
+    #footer{
         padding: 20px 30%;
     }
     #hero-home{
@@ -130,7 +130,7 @@
     .image-icons{
         width: 50%;
     }
-    #gal{
+    .gal{
         width: 140px;
     }
     #rose1{
